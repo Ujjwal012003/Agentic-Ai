@@ -1,54 +1,84 @@
-# Debate Crew
+# ⚔️ The Debating Agent Crew
 
-Welcome to the Debate Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+![Repo Status](https://img.shields.io/badge/status-active-green)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## Installation
+Welcome to the Debating Agent project, powered by **`crewAI`**. This project demonstrates a multi-agent system where AI agents take on the roles of a debater and a judge to analyze and form a verdict on a complex topic.
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+---
+## How It Works
 
-First, if you haven't already, install uv:
+This crew consists of two specialized agents that collaborate to perform a comprehensive analysis:
 
+* **🧠 The Debater Agent:** Takes a stance on a given topic, researches compelling arguments and potential counter-arguments, and builds a powerful, evidence-based case.
+* **⚖️ The Judge Agent:** Analyzes the debate, evaluates the evidence and logic presented, and provides a final, strategic verdict on which argument is more sound.
+
+---
+## ⚙️ Setup and Installation
+
+Follow these steps to get the Debating Agent Crew running on your local machine.
+
+### Step 1: Clone the Repository
+
+First, clone the main repository and navigate into the correct project directory.
+```bash
+git clone [https://github.com/Ujjwal012003/Agentic-Ai.git](https://github.com/Ujjwal012003/Agentic-Ai.git)
+cd Agentic-Ai/Debating_Agent/crew/debate
+```
+
+### Step 2: Install `uv`
+
+This project uses **`uv`** for fast and efficient package management. If you don't have it, install it with pip:
 ```bash
 pip install uv
 ```
 
-Next, navigate to your project directory and install the dependencies:
+### Step 3: Install Project Dependencies
 
-(Optional) Lock the dependencies and install them by using the CLI command:
+The simplest way to create the virtual environment and install all necessary packages is by using the `crewai` command-line tool.
 ```bash
 crewai install
 ```
-### Customizing
+This command will use `uv` to create a `.venv` folder and install all the dependencies listed in your `pyproject.toml` file.
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+---
+## 🔑 Configuration
 
-- Modify `src/debate/config/agents.yaml` to define your agents
-- Modify `src/debate/config/tasks.yaml` to define your tasks
-- Modify `src/debate/crew.py` to add your own logic, tools and specific args
-- Modify `src/debate/main.py` to add custom inputs for your agents and tasks
+Before running the crew, you must provide your Large Language Model (LLM) API key.
 
-## Running the Project
+1.  Find the `.env` file in the project directory.
+2.  Open it and add your API key. Depending on the model you're using in `agents.yaml`, it will look like one of these:
+    ```
+    OPENAI_API_KEY="sk-..."
+    ```
+    or
+    ```
+    GOOGLE_API_KEY="..."
+    ```
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+---
+## 🚀 Running the Agent
 
+With the setup complete, you can now run the agent crew. Execute the following command from the project's root directory:
 ```bash
-$ crewai run
+crewai run
 ```
+By default, the agents will begin their debate on the topic defined in `src/debate/main.py` and, upon completion, will generate a `report.md` file in the root folder containing the judge's final verdict.
 
-This command initializes the Debate Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
+## 🔧 Customizing Your Crew
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+You can easily adapt this project to debate any topic you want:
 
-## Understanding Your Crew
+* **Modify Agents:** Edit `src/debate/config/agents.yaml` to change the roles, goals, or backstories of your agents.
+* **Modify Tasks:** Edit `src/debate/config/tasks.yaml` to change the instructions or expected outputs for the tasks.
+* **Set the Topic:** Open `src/debate/main.py` to change the input `topic` for the debate.
 
-The Debate Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
+---
 ## Support
 
-For support, questions, or feedback regarding the Debate Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+For more help or information about `crewAI`, check out the official resources:
+* [Official Documentation](https://docs.crewai.com)
+* [GitHub Repository](https://github.com/joaomdmoura/crewAI)
+* [Discord Community](https://discord.com/invite/X4JWnZnxPb)
