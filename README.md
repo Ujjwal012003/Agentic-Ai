@@ -24,10 +24,15 @@ This repository is my personal lab for building and experimenting with these pow
 
 These projects primarily leverage the following technologies and frameworks:
 
+These projects primarily leverage the following technologies and frameworks:
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-4B8BBE?style=for-the-badge)
 ![LangChain](https://img.shields.io/badge/LangChain-2A3856?style=for-the-badge)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E44AD?style=for-the-badge&logo=google-gemini&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 ---
 ## 🚀 Getting Started
@@ -36,7 +41,7 @@ To run any of the agents in this repository:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/Agentic-Ai.git](https://github.com/your-username/Agentic-Ai.git)
+    git clone [https://github.com/Ujjwal012003/Agentic-Ai.git](https://github.com/Ujjwal012003/Agentic-Ai.git)
     ```
 2.  **Navigate to an agent's directory:**
     ```bash
@@ -48,7 +53,7 @@ To run any of the agents in this repository:
     ```
 4.  **Set up your environment variables:**
     * Create a `.env` file in the agent's directory.
-    * Add your API keys (e.g., `OPENAI_API_KEY='sk-...'`).
+    * Add your API keys (e.g., `OPENAI_API_KEY='sk-...'`, `GEMINI_API_KEY='....'`, or any LLM).
 
 ---
 ## 🤝 Join the Journey
