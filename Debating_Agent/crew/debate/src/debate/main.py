@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': "ADD YOUR TOPIC AT WHICH DEBATE GONNA TAKE PLACE",#WRITE DOWN YOUR TOPIC ON WHICH YOU WANT THE DEBATE TO HAPPEN
+        'topic': "India's Economic Growth Strategy",  #WRITE DOWN YOUR TOPIC ON WHICH YOU WANT THE DEBATE TO HAPPEN
         
     }
     
@@ -67,4 +67,5 @@ def test():
 
     except Exception as e:
         raise Exception(f"An error occurred while testing the crew: {e}")
+
 
