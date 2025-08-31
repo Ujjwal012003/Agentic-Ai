@@ -1,0 +1,47 @@
+propose:
+  description: >
+    Your mission is to arm yourself for a high-stakes debate on {topic}. Go beyond the surface-level arguments and uncover the most compelling, controversial, and timely evidence available.
+     Find the data, expert opinions, and case studies that challenge the conventional wisdom and provide a powerful, contrarian viewpoint.
+     You are not just gathering facts; you are building an arsenal.
+  expected_output: >
+    A tactical debate brief formatted for rapid deployment. It must include:
+
+    1. Opening Salvos: A list of 3-5 powerful, evidence-backed arguments to establish a strong, defensible position on {topic}.
+
+    2. Opponent's Playbook: A concise list of the most predictable counter-arguments your opponent will likely use.
+
+    3. Counter-Strikes: For each anticipated counter-argument, a sharp, fact-based rebuttal designed to dismantle their point.
+  agent: debater
+  output_file: output/propose.md
+
+oppose:
+  description: >
+    Your mission is to construct a powerful case against {topic}. 
+    Your focus is to uncover the critical flaws, hidden risks, and negative consequences associated with it. Seek out the dissenting expert opinions, contradictory data, and case studies that dismantle the positive narrative surrounding the topic. 
+    You are not just gathering facts; you are building a case for the prosecution.
+  expected_output: >
+    A prosecutorial brief designed to systematically dismantle the case for {topic}. It must include:
+
+    1. Points of Attack: A list of 3-5 powerful, evidence-backed arguments highlighting the primary weaknesses, risks, and negative consequences of {topic}.
+
+    2. Anticipated Defense: A concise list of the most predictable arguments advocates for {topic} will use in its defense.
+
+    3. Rebuttals: For each anticipated defense, a sharp, fact-based rebuttal designed to neutralize their argument.
+  agent: debater
+  output_file: output/oppose.md
+
+decide:
+  description: >
+    The arguments on {topic} have been presented.
+     Your task is to now render a final, decisive verdict. Cut through all rhetorical fluff and strategic posturing to analyze the core arguments from each side. Evaluate the debate based on logical consistency, the quality of the evidence, and—most importantly—the strategic and practical viability of the positions.
+     Your judgment must be clear, concise, and actionable.
+  expected_output: >
+    A final judgment memorandum formatted for an executive decision-maker. It must contain:
+
+    1. The Verdict: A clear, one-sentence declaration of the winning position.
+
+    2. Rationale for Decision: A brief analysis of the critical points that decided the debate, highlighting the strengths of the winning argument and the key failures of the losing one.
+
+    3. Strategic Executive Summary: A forward-looking summary outlining the real-world implications of the verdict and a recommended course of action based on the winning argument.
+  agent: judge
+  output_file: output/decide.md
