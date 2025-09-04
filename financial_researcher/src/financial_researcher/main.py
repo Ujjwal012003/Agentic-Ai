@@ -11,7 +11,7 @@ def run():
     Run the research crew.
     """
     inputs = {
-        'company': 'Samsung'
+        'company': 'Apple' #Add the name of the company you want to research about
     }
 
     # Create and run the crew
@@ -24,4 +24,5 @@ def run():
     print("\n\nReport has been saved to output/report.md")
 
 if __name__ == "__main__":
+
     run()
